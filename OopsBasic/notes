@@ -1,0 +1,47 @@
+-main class is also called the test class
+-upon running a java code, no matter how many classes re there. the compiler searches for psvm only
+-public means, the main functon is accessable by any other package in the codebase
+-private makes sures that its the inverse.
+-static means, to call this method (thing) you dont need a object
+-a normal class has only 2 things: methods,variables both of them are optional
+- if no return type is mentioned then it takes "default" as a return type
+
+10/7/2026
+-create a simple pojo class?
+-pojo: plain old style java object
+-pojo class have varibles, methods, these methods will be getter and setters
+-getter and setter are special methods to either get the value of the class or set the value
+-what happends behind the scene when u create a object of a class?
+-there are 2 types of memory stack mem and heap memory
+-Person obj=new Person();  after doing this ,
+-a variable called obj , will be storedi n the stack of main()
+-since stack is LIFO, it will
+-this stack is created in the heap memory
+
+- Person q;
+- will not creat a object since it does not hvae new keyword and not reffering to anything hence
+
+- new Person(); will allocate memory but have no reference
+- java performs automatic garbage collection
+- it checks if there are any objects which has no refrence. and deletes it
+
+-Person q=new Person()
+-Person p=q
+-shallow copy is when 2 references point to same memory
+- 2 refrences are pointing to same memory hence they share the same memory
+
+-Person p=new Person()
+-Person q=new Person()
+-deep copy is when 2 refferences are having different memory , hence they dont share memory
+
+-ultimately , when you do Person p=new Person();
+-new Person() allocated memory in a heap, where it created a stack which has its methods, varibales (added by the constructor )
+-Person p is a reference of type Person.
+
+- contructor
+- no return type
+- its is exectuted automatically
+- its method name is Classname
+
+-Design patterns
+- alway prefer composotion instead of inheritance
