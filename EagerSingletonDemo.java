@@ -19,5 +19,9 @@ public class EagerSingletonDemo {
     public static void main(String[] args) {
         Singleton s = Singleton.getInstance();
         s.show();
+        Singleton s2 = Singleton.getInstance();
+        s2.show();
+        System.out.println(s.equals(s2)); // true
+
     }
 }

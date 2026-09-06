@@ -7,8 +7,15 @@ class Student implements Cloneable {
         this.name = name;
     }
 
-    public Student clone() throws CloneNotSupportedException {
-        return (Student) super.clone();
+    @Override 
+    public Student clone()  {
+        try{
+            return (Student) super.clone();
+
+        }catch(CloneNotSupportedException e){
+            System.out.println(e);
+        }
+        return null;
     }
 }
 
@@ -20,5 +27,7 @@ public class PrototypeDemo {
 
         System.out.println(s1.name);
         System.out.println(s2.name);
+
+        System.out.println(s1.equals(s2)); // false
     }
 }

@@ -31,7 +31,7 @@ class NotificationFactory {
 
         if (type.equals("sms"))
             return new SMS();
-
+        
         return null;
     }
 }

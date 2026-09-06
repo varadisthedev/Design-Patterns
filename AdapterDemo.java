@@ -11,10 +11,10 @@ class OldCharger {
 }
 
 class Adapter implements Charger {
-    OldCharger charger = new OldCharger();
+    OldCharger oldchargerobj = new OldCharger();
 
     public void charge() {
-        charger.oldCharge();
+        oldchargerobj.oldCharge();
     }
 }
 
