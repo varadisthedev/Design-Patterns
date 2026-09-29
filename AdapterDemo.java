@@ -11,8 +11,9 @@ class OldCharger {
 }
 
 class Adapter implements Charger {
-    OldCharger oldchargerobj = new OldCharger();
+    private OldCharger oldchargerobj = new OldCharger();
 
+    @Override
     public void charge() {
         oldchargerobj.oldCharge();
     }
@@ -20,8 +21,7 @@ class Adapter implements Charger {
 
 public class AdapterDemo {
     public static void main(String[] args) {
-        Charger charger = new Adapter();
-
+        Charger charger = new Adapter(); // upcast
         charger.charge();
     }
 }
