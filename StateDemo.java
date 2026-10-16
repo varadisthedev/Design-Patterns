@@ -109,8 +109,8 @@ public class StateDemo {
 
         System.out.println("Gumballs: " + machine.getNumberOfGumballs());
 
-        machine.insertCoin();
         machine.turnCrank();
+        machine.insertCoin();
 
         System.out.println("Gumballs: " + machine.getNumberOfGumballs());
 
